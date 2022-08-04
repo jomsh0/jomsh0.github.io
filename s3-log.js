@@ -2,12 +2,13 @@
 ///   PARAMETERS
 //
 const BUCKET = 'jomshcc'
-    , REGION = 'us-east-2' // e.g. us-east-2
-    , PIXEL  = 'c.gif'
+    , REGION = 'us-east-1' // e.g. us-east-2
+    , PIXEL  = 'p.gif'
 
 // Don't log under testing/development conditions
 if (location.protocol != 'file:'     &&
     location.hostname != 'localhost' &&
+    !location.hostname.endsWith('.local') &&
     location.search   != '?test')    // Fallback convention
 {
     const url = new URL(`https://${BUCKET}.s3.${REGION}.amazonaws.com/${PIXEL}`)
