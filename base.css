@@ -6,8 +6,7 @@
   --heading: Cooper Black, Source Serif Pro, Charter, Superclarendon, Noto Serif Display, Noto Serif, Roboto Slab, Bookman Old Style, bookman;
   --title: Shrikhand, var(--heading);
   --grad: linear-gradient(to top right, cyan, dodgerblue);
-  --bg: #22201c;
-  /*--bg:  hsl(220deg 15% 15%);*/
+  --bg: hsl(20deg, 7%, 13%);
   --fg: #ccc;
   color: var(--fg);
   background: var(--bg);
