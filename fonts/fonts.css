@@ -1,6 +1,20 @@
 /* Thanks, Google */
 /* latin-ext */
 @font-face {
+  font-family: vollkorn;
+  font-weight: 400 900;
+  font-style: normal;
+  src: url(Vollkorn-VariableFont_wght.woff2)
+       format(woff2) tech(variations);
+}
+@font-face {
+  font-family: vollkorn;
+  font-weight: 400 900;
+  font-style: italic;
+  src: url(Vollkorn-Italic-VariableFont_wght.woff2)
+       format(woff2) tech(variations);
+}
+@font-face {
   font-family: 'Shrikhand';
   font-style: normal;
   font-weight: normal bold;

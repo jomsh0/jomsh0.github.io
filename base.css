@@ -1,13 +1,14 @@
 @import url(fonts/fonts.css);
 
 :root {
-  --serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --heading: Cooper Black, Source Serif Pro, Charter, Superclarendon, Noto Serif Display, Noto Serif, Roboto Slab, Bookman Old Style, bookman;
-  --title: Shrikhand, var(--heading);
+  --serif:
+      vollkorn,
+      canela text, Source Serif Pro, Palatino, serif;
+  --sans: system-ui, segoe ui, roboto, sans-serif;
+  --title: Shrikhand, var(--serif);
   --grad: linear-gradient(to top right, cyan, dodgerblue);
-  --bg: hsl(40deg  3%  12%);
-  --fg: hsl(none  none  90%);
+  --bg: hsl(40deg  10%  11%);
+  --fg: hsl(none  none  85%);
   color: var(--fg);
   background: var(--bg);
   font-family: var(--sans);
@@ -24,8 +25,8 @@ header img#me {
 a { color: inherit; }
 
 h1 {
-  font-family: var(--heading);
-  font-weight: 900;
+  font-family: var(--serif);
+  font-weight: 800;
 }
 
 svg.feather {
