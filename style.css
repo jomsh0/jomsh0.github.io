@@ -11,7 +11,10 @@ footer {
   margin-top: 1.5rem;
 }
 
-h1 { font-size: 2.25em; margin-block: .4em; }
+h1 {
+  font: 2.5em Cooper Black, var(--serif);
+  margin-block: .3em;
+}
 nav {
   --brad: 1em;
   width: max-content;
@@ -24,24 +27,31 @@ nav:hover {
   background: var(--grad) border-box;
   border-color: transparent;
 }
-nav > div { background: var(--bg); border-radius: var(--brad); }
-nav > div > menu {
-  padding: .5rem 0;
-  margin: 0 auto;
-  list-style: none;
-  background-image: var(--grad);
-  -webkit-background-clip: text;
-  background-clip: text;
+nav > div {
+  background: var(--bg);
+  border-radius: var(--brad);
+  > menu {
+    padding: .5rem 0;
+    margin: 0 auto;
+    list-style: none;
+    background-image: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
 menu li > a {
   display: block;
   padding: .5rem 2rem;
   text-decoration: none;
+
+  & svg.feather {
+    font-size: xx-large;
+    margin-inline-end: 1rem;
+  }
+  & * { vertical-align: middle; }
 }
-menu li > a:hover { color: transparent; font-weight: bold; }
-menu li > a:hover svg.feather { stroke: url(#grad); }
-menu li > a * { vertical-align: middle; }
-menu li svg.feather {
-  font-size: xx-large;
-  margin-inline-end: 1rem;
+menu li > a:hover {
+  color: transparent;
+  font-weight: bold;
+  & svg.feather { stroke: url(#grad); }
 }
