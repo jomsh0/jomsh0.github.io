@@ -6,7 +6,7 @@
       canela text, Source Serif Pro, Palatino, serif;
   --sans: system-ui, segoe ui, roboto, sans-serif;
   --grad: linear-gradient(to top right, cyan, dodgerblue);
-  --bg: hsl(40deg  10%  11%);
+  --bg: hsl(40deg  9%  10%);
   --fg: hsl(none  none  85%);
   color: var(--fg);
   background: var(--bg);
